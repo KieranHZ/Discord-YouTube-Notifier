@@ -6,7 +6,7 @@ from Implementation import YouTuber
 from config import Config
 
 config = Config('config.yml')
-client.run(os.getenv("DISCORD_TOKEN"))
+client = discord.Client()
 youtubers = config.getYouTubersList() if (config.getYouTubersNr() != 0) else sys.exit()
 if (config.getDiscordChannelNr() == 0): sys.exit()
 id = ''
