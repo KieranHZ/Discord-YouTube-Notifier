@@ -1,1 +1,1 @@
-Worker runbot.bat
+Worker python main.py
